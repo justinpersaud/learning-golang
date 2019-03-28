@@ -1,0 +1,9 @@
+<h1>Hello, {{ .Name }}</h1>
+<h1>Your dog's name is, {{ .Dog.Name }}</h1>
+<h1>You are this old:, {{ .Age }}</h1>
+<h1>Pi is:, {{ .Float }}</h1>
+{{ range .Slice }}
+<p> Slice item! </p>
+{{ . }}{{ end }}
+
+<h1>Map test:, {{ .Map.abc }}</h1>
